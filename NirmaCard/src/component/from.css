@@ -1,0 +1,7 @@
+form .form{
+    min-width: 480px;
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+}

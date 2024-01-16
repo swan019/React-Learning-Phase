@@ -1,0 +1,11 @@
+.productitem{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        min-width: 85%;
+        font-size: 2rem;
+        background-color: yellowgreen;
+        padding: 1rem;
+        border-radius: 10px;
+        justify-content: space-around;
+}

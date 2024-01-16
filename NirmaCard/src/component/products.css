@@ -1,0 +1,12 @@
+.productItem{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgba(87, 239, 186, 0.578);
+    min-width: 480px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 16px;
+}
