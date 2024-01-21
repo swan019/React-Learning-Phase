@@ -20,6 +20,7 @@ const Products = (props) => {
                 amount={props.items[2].amount}
                 date={props.items[2].date}
             ></ProductItem>
+
            
         </div>
 

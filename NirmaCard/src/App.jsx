@@ -24,6 +24,12 @@ function App() {
       title : 'tide',
       amount : 90,
       date : new Date(2010, 5, 11)
+    },
+    {
+      id : 'p3',
+      title : 'tide',
+      amount : 90,
+      date : new Date(2010, 5, 11)
     }
   ];
 
