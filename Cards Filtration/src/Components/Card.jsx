@@ -1,6 +1,8 @@
 import React from 'react'
 import { FcLike, FcLikePlaceholder } from "react-icons/fc"
 import { toast } from 'react-toastify';
+import './Card.css'
+
 
 function Card(props) {
     let course = props.course;
@@ -25,7 +27,7 @@ function Card(props) {
 
     return (
         <div className="w-[300px]  bg-[#333] bg-opacity-75  text-white rounded-md overflow-hidden" >
-            <div className="relative">
+            <div className="relative CardImg">
                 <img className="" src={course.image.url} alt="" />
                 <div className = "w-[40px] h-[40px] bg-white rounded-full absolute right-2 bottom-3 grid place-items-center">
                     <button onClick={clickHandler}>

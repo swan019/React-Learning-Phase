@@ -18,15 +18,13 @@ function App() {
 
   const [Courses, setCourses] = useState([]);
   const [loding, setLoding] = useState(true);
-  const[category, setcategory] = useState(filterData[0].title);
+  const [category, setcategory] = useState(filterData[0].title);
   async function featchData() {
     setLoding(true);
     try {
       let response = await fetch(apiUrl);
       let output = await response.json();
       setCourses(output.data)
-      // console.log(output.data);
-      // console.log(Object.keys(output.data).length);
     }
     catch (error) {
       toast.error("nework me dikkat he kya");
@@ -46,16 +44,16 @@ function App() {
       </div>
       <div>
         <Filter filterData={filterData}
-          category = {category}
-          setcategory = {setcategory}
+          category={category}
+          setcategory={setcategory}
         />
       </div>
       <div className='w-11/12 max-w-[1200px] mx-auto flex 
            justify-center items-center min-h-[50vh]'>
-          {
-            loding ? ( <Spinner/>) : (<Cards Courses = {Courses} category = {category}/>)
-          }
-      </div> 
+        {
+          loding ? (<Spinner />) : (<Cards Courses={Courses} category={category} />)
+        }
+      </div>
     </div>
   )
 }

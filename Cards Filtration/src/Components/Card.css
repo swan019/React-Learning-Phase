@@ -1,0 +1,6 @@
+.CardImg :hover{
+    scale: 1.055;
+    cursor: pointer;
+    transition-duration: 1000ms;
+
+}
