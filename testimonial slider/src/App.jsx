@@ -13,7 +13,7 @@ function App() {
   const[index, setindex] = useState(0);
 
   return (
-    <div>
+    <div className='w-100vw h-[auto] mt-[6rem]'>
       <Tesimonial_haeding/>
       <Reviews_card index = {index} setindex = {setindex}/>
     </div>
